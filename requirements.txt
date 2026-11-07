@@ -1,0 +1,10 @@
+ladybug==0.22.1
+mcp==1.30.0
+starlette==1.10.0
+uvicorn==0.54.0
+httpx==0.28.1
+pydantic==2.14.2
+PyMuPDF==2.0
+python-docx==1.2.0
+tiktoken==0.14.0
+Pillow==13.0.0
