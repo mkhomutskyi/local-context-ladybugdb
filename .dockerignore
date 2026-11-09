@@ -1,0 +1,12 @@
+**
+!requirements.txt
+!docker/
+!docker/Dockerfile
+!context_layer/
+!context_layer/*.py
+!context_manager/
+!context_manager/*.py
+!context_manager/static/
+!context_manager/static/index.html
+!context_manager/static/app.js
+!context_manager/static/styles.css

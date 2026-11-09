@@ -28,3 +28,13 @@ settings.json
 *.png
 *.jpg
 .DS_Store
+
+# Explicitly reviewed synthetic documentation screenshots only.
+!docs/images/manager-answer.png
+!docs/images/workflow.png
+owner-code.txt
+mcp-token.txt
+profile.json
+bridge/
+control/
+projects/

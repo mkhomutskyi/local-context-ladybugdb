@@ -6,9 +6,24 @@ I built this context layer to keep my documents useful across local chats, at ho
 
 This repository contains application source and fictional examples. It contains no personal library, extracted personal text, embeddings, chat history, credentials, model weights or private test exports.
 
-Start with the [fictional House Orchid demo](#prerequisites-once-then-one-startup-command), then [connect a chat client](#connect-a-chat-client). Use a separate private state directory when you are ready to add your own files.
+## Start with the document manager
 
-## What I tested
+The browser manager adds projects, uploads, OCR review, folder changes, approved links, source inspection, local answers and travel exports. Start with the [manager setup guide](docs/MANAGER.md). It includes native and Docker launchers; both were exercised from this public checkout on Windows with fictional records.
+
+```text
+python manager.py --home /PRIVATE/MANAGER --extensions /LOCAL/NATIVE/EXTENSIONS --token-cache /LOCAL/TOKEN/CACHE --chat-model CANONICAL_CHAT_ID --embedding-model CANONICAL_NOMIC_ID
+```
+
+Prepare the dependencies, local native assets and models first. Replace the placeholders with your paths and the installed canonical IDs. Open `http://127.0.0.1:8791` and read the access code locally from the private state directory. Later starts reuse the saved profile. For Docker, the guide adds `--deployment docker` and a one-time public image build. No private prepared image is required.
+
+![Local manager answering a fictional accounting question with cited source evidence.](docs/images/manager-answer.png)
+
+Actual screenshot with fictional records. The manager's Mac deployment and family accounts remain unverified.
+
+Prefer the earlier native MCP service without a manager? Use the [fictional House Orchid demo](#prerequisites-once-then-one-startup-command), then [connect a chat client](#connect-a-chat-client). It uses `run.py` and port 8765. The document manager uses `manager.py`, browser port 8791 and project MCP port 8792. Keep their private state directories separate.
+
+
+## Earlier context-service tests
 
 | Workflow | Recorded result |
 |---|---|
